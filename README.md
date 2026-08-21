@@ -213,12 +213,6 @@ console.log( accumulator() );
 
 <section class="related">
 
-* * *
-
-## See Also
-
--   <span class="package-name">[`@stdlib/stats-incr/mpcorr2`][@stdlib/stats/incr/mpcorr2]</span><span class="delimiter">: </span><span class="description">compute a moving squared sample Pearson product-moment correlation coefficient incrementally.</span>
-
 </section>
 
 <!-- /.related -->
@@ -300,8 +294,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [covariance]: https://en.wikipedia.org/wiki/Covariance
 
 <!-- <related-links> -->
-
-[@stdlib/stats/incr/mpcorr2]: https://github.com/stdlib-js/stats-incr-mpcorr2
 
 <!-- </related-links> -->
 
