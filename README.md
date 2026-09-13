@@ -46,7 +46,7 @@ The [Pearson product-moment correlation coefficient][pearson-correlation] betwee
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\rho_{X,Y} = \frac{\operatorname{cov}(X,Y)}{\sigma_X \sigma_Y}" data-equation="eq:pearson_correlation_coefficient">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e6bc812ab63010afd0f25418c0c6954c3a680357/lib/node_modules/@stdlib/stats/incr/mpcorr2/docs/img/equation_pearson_correlation_coefficient.svg" alt="Equation for the Pearson product-moment correlation coefficient.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@026b97a23151831dde2760747d887559a9b55472/lib/node_modules/@stdlib/stats/incr/nanmpcorr2/docs/img/equation_pearson_correlation_coefficient.svg" alt="Equation for the Pearson product-moment correlation coefficient.">
     <br>
 </div> -->
 
@@ -63,7 +63,7 @@ r = \frac{\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})(y_i - \bar{y})}{\display
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="r = \frac{\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})(y_i - \bar{y})}{\displaystyle\sqrt{\sum_{i=0}^{n-1} (x_i - \bar{x})^2} \displaystyle\sqrt{\displaystyle\sum_{i=0}^{n-1} (y_i - \bar{y})^2}}" data-equation="eq:sample_pearson_correlation_coefficient">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e6bc812ab63010afd0f25418c0c6954c3a680357/lib/node_modules/@stdlib/stats/incr/mpcorr2/docs/img/equation_sample_pearson_correlation_coefficient.svg" alt="Equation for the sample Pearson product-moment correlation coefficient.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@671ec4bdbce6f50644ccb57ce5001a1c1356e0c1/lib/node_modules/@stdlib/stats/incr/nanmpcorr2/docs/img/equation_sample_pearson_correlation_coefficient.svg" alt="Equation for the sample Pearson product-moment correlation coefficient.">
     <br>
 </div> -->
 
@@ -75,14 +75,32 @@ The squared sample [Pearson product-moment correlation coefficient][pearson-corr
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-nanmpcorr2
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import incrnanmpcorr2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nanmpcorr2@esm/index.mjs';
+var incrnanmpcorr2 = require( '@stdlib/stats-incr-nanmpcorr2' );
 ```
 
 #### incrnanmpcorr2( window\[, mx, my] )
@@ -166,14 +184,9 @@ r2 = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrnanmpcorr2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nanmpcorr2@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrnanmpcorr2 = require( '@stdlib/stats-incr-nanmpcorr2' );
 
 var accumulator;
 var x;
@@ -190,10 +203,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( x, y );
 }
 console.log( accumulator() );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -217,7 +226,7 @@ console.log( accumulator() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
